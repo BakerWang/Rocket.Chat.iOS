@@ -7,12 +7,14 @@
 //
 
 import Foundation
-import Log
 
-class Log {
-    
-    static func debug(text: String) {
-        Logger().debug(text)
+struct Log {
+
+    static func debug(_ text: String?) {
+        #if DEBUG
+        guard let text = text else { return }
+        print(text)
+        #endif
     }
-    
+
 }

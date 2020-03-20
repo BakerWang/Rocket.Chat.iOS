@@ -10,5 +10,7 @@
 #define Rocket_Chat_Bridge_h
 
 #import "CommonCrypto/CommonCrypto.h"
+#import <UIKit/UIKit.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #endif /* Rocket_Chat_Bridge_h */
